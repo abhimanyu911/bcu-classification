@@ -9,6 +9,13 @@
 [Agarwal paper](https://iopscience.iop.org/article/10.3847/1538-4357/acbdfa/pdf)
 
 
+# Best model
+
+
+Lightweight bias initialised NN with soft voting
+
+
+
 # Inference
 
 
