@@ -9,10 +9,19 @@
 [Agarwal paper](https://iopscience.iop.org/article/10.3847/1538-4357/acbdfa/pdf)
 
 
-# Best model
+# Model ranks
 
 
-Lightweight bias initialised NN with soft voting
+1) Lightweight bias initialised NN with soft voting (7/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 7%, F1: 93.0)
+
+
+2) Supervised greedy pretraining (6/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 8.5%, F1: 91.7)
+
+
+3) Unsupervised greedy pretraining(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.56)
+
+
+4) Self Supervised Learning(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.37)
 
 
 
