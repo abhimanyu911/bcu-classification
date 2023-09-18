@@ -48,7 +48,7 @@ if st.button("Predict"):
     epochs = [40, 41]
     weights = [0.1, 0.9]
     for epoch, weight in zip(epochs, weights):
-        weights_path = f"./ckpt/weights_epoch_{epoch}.h5"
+        weights_path = f"app//ckpt//weights_epoch_{epoch}.h5"
         standard_nn_classifier.load_weights(weights_path)  # Uncomment this line when your model is ready
         predictions = standard_nn_classifier.predict(X, verbose = 0)  # Uncomment this line when your model is ready
         preds += weight * predictions
