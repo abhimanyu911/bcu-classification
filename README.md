@@ -53,3 +53,10 @@ Agarwal model inference speed = 5056/(5.4 x 10^12) = 936.296 x 10^(-12) = 936.29
 
 
 Our model inference speed = 672/(5.4 x 10^12) = 124.44 pico seconds
+
+
+
+# Web app Demo (AWS)
+
+
+![](./aws-app-demo.gif)
