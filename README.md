@@ -18,10 +18,14 @@
 2) Supervised greedy pretraining (6/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 8.5%, F1: 91.7)
 
 
-3) Unsupervised greedy pretraining(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.56)
+3) Self Supervised Learning Autoencoder (3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 10.9%, F1: 89.1, AUC: 94.9)
 
 
-4) Self Supervised Learning(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.37)
+4) Unsupervised greedy pretraining(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.56)
+
+5) Self Supervised Learning Contrastive (3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.1)
+
+
 
 
 
@@ -60,3 +64,9 @@ Our model inference speed = 672/(5.4 x 10^12) = 124.44 pico seconds
 
 
 ![](./aws-app-demo.gif)
+
+
+# Results
+
+
+[results notebook](./plotting.ipynb)
