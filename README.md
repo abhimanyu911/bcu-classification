@@ -9,25 +9,6 @@
 [Agarwal paper](https://iopscience.iop.org/article/10.3847/1538-4357/acbdfa/pdf)
 
 
-# Model ranks
-
-
-1) Lightweight bias initialised NN with soft voting (7/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 7%, F1: 93.0)
-
-
-2) Supervised greedy pretraining (6/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 8.5%, F1: 91.7)
-
-
-3) Self Supervised Learning Autoencoder (3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 10.9%, F1: 89.1, AUC: 94.9)
-
-
-4) Unsupervised greedy pretraining(3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.56)
-
-5) Self Supervised Learning Contrastive (3/8 metrics outperformed when comparing with mean values of Agarwal NN; missclass rate: 11.4%, F1: 88.7, AUC: 95.1)
-
-
-
-
 
 # Inference
 

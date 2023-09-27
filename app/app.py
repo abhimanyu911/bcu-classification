@@ -62,4 +62,6 @@ if st.button("Predict"):
     # Display the prediction
     st.subheader("Prediction:")
     st.write(f"The predicted class is: {predicted_class}")
-    st.write(f"The predicted probability is: {predicted_probability:.4f}")
+    st.write(f"Pr(BLL|X): {1-predicted_probability:.20f}")
+    st.write(f"Pr(FSRQ|X): {predicted_probability:.20f}")
+    
