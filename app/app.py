@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import tensorflow as tf
+from sklearn.compose import make_column_transformer
+from sklearn.preprocessing import StandardScaler
+import pandas as pd
 
 # Function to initialize the model
 def get_classifier(bll=1053, fsrq=551, features=7):
@@ -34,13 +37,32 @@ variability_index = st.number_input("Variability_Index", value=46.780693,format=
 nuFnu_syn = st.number_input("nuFnu_syn", value=1.936770e-12, step=1e-15,format="%.25f")
 
 # Apply transformations
+feature_columns = ['PL_Index', 'nu_syn', 'LP_Index', 'Pivot_Energy', 'Frac_Variability', 'Variability_Index', 'nuFnu_syn']
+transformer = make_column_transformer(
+    (StandardScaler(), 
+        feature_columns)
+)
+X_train = pd.read_csv('./classification_data//train_samples.csv')
+transformer.fit(X_train)
 pivot_energy = log_transform(pivot_energy)
 variability_index = log_transform(variability_index)
 nu_syn = log_transform(nu_syn, base=1e12)
 nuFnu_syn = log_transform(nuFnu_syn, base=1e-12)
 
 # Create input array for prediction
-X = np.array([[pl_index, nu_syn, lp_index, pivot_energy, frac_variability, variability_index, nuFnu_syn]])
+data = {
+    'PL_Index': [pl_index],
+    'nu_syn': [nu_syn],
+    'LP_Index': [lp_index],
+    'Pivot_Energy': [pivot_energy],
+    'Frac_Variability': [frac_variability],
+    'Variability_Index': [variability_index],
+    'nuFnu_syn': [nuFnu_syn]
+}
+
+# Create a DataFrame from the dictionary
+X = pd.DataFrame(data)
+X = transformer.transform(X)
 
 # Perform prediction
 if st.button("Predict"):
