@@ -1,12 +1,24 @@
 # BCU classification
 
 
-
-[Standard lightweight NN using bias initialisation](./data_engg_classification.ipynb)
-
+A collection of approaches to classify unidentified samples in the 4LAC-DR3 catalog with the help of Machine Learning.
 
 
-[Agarwal paper](https://iopscience.iop.org/article/10.3847/1538-4357/acbdfa/pdf)
+# Web app installation 
+
+
+```
+git clone https://github.com/abhimanyu911/bcu-classification.git
+pip install -r app/requirements.txt
+streamlit run app/app.py
+```
+
+
+[Our deployed model](./data_engg_classification.ipynb)
+
+
+
+[Agarwal et al - additional reference](https://iopscience.iop.org/article/10.3847/1538-4357/acbdfa/pdf)
 
 
 
@@ -46,6 +58,8 @@ Our model inference speed = 672/(5.4 x 10^12) = 124.44 pico seconds
 
 ![](./aws_bcu_app.gif)
 
+
+[AWS link](http://13.239.10.157:8501/)
 
 
 [Streamlit link](https://bcu-classification-ml.streamlit.app/)
