@@ -68,3 +68,27 @@ Our model inference speed = 672/(5.4 x 10^12) = 124.44 pico seconds
 
 
 [results notebook](./plotting.ipynb)
+
+
+# Please cite the manuscript incase you happen to use any of our code
+
+[Manuscript](https://academic.oup.com/mnras/article/528/1/976/7512220)
+
+
+```
+@article{10.1093/mnras/stae028,
+    author = {Bhatta, Gopal and Gharat, Sarvesh and Borthakur, Abhimanyu and Kumar, Aman},
+    title = "{Gamma-ray blazar classification using machine learning with advanced weight initialization and self-supervised learning techniques}",
+    journal = {Monthly Notices of the Royal Astronomical Society},
+    volume = {528},
+    number = {1},
+    pages = {976-986},
+    year = {2024},
+    month = {01},
+    abstract = "{Machine learning has emerged as a powerful tool in the field of gamma-ray astrophysics. The algorithms can distinguish between different source types, such as blazars and pulsars, and help uncover new insights into the high-energy universe. The Large Area Telescope onboard the Fermi gamma-ray telescope has significantly advanced our understanding of the Universe. The instrument has detected a large number of gamma-ray-emitting sources, among which a significant number of objects have been identified as active galactic nuclei. The sample is primarily composed of blazars; however, more than one-third of these sources are either of an unknown class or lack a definite association with a low-energy counterpart. In this work, we employ multiple machine learning algorithms to classify the sources based on their other physical properties. In particular, we utilized smart initialization techniques and self-supervised learning for classifying blazars into BL Lacertae (BL Lac, also BLL) objects and flat-spectrum radio quasars (FSRQs). The core advantage of the algorithm is its simplicity, usage of minimum number of features and easy deployment due to lesser number of parameters without compromising on the performance along with increase in inference speed (at least seven times more than existing algorithms). As a result, the best-performing model is deployed on multiple platforms so that any user irrespective of their coding background can use the tool. The model predicts that out of the 1115 sources of uncertain type in the 4FGL-DR3 catalogue, 820 can be classified as BL Lacs and 295 can be classified as FSRQs.}",
+    issn = {0035-8711},
+    doi = {10.1093/mnras/stae028},
+    url = {https://doi.org/10.1093/mnras/stae028},
+    eprint = {https://academic.oup.com/mnras/article-pdf/528/1/976/56334707/stae028.pdf},
+}
+```

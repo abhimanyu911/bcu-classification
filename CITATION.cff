@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Borthakur"
+  given-names: "Abhimanyu"
+  bio: "https://abhimanyu911.github.io/"
+title: "BCU classification using smart initialisation and SSL"
+version: 0.0.1
+doi: 10.1093/mnras/stae028
+date-released: 2024-01-05
+url: "https://github.com/abhimanyu911/bcu-classification"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Bhatta"
+    given-names: "Gopal"
+  - family-names: "Gharat"
+    given-names: "Sarvesh"
+  - family-names: "Borthakur"
+    given-names: "Abhimanyu"
+  - family-names: "Kumar"
+    given-names: "Aman"
+  doi: "10.1093/mnras/stae028"
+  journal: "Monthly Notices of the Royal Astronomical Society"
+  month: 01
+  start: 976 # First page number
+  end: 986 # Last page number
+  title: "Gamma-ray blazar classification using machine learning with advanced weight initialization and self-supervised learning techniques"
+  issue: 1
+  volume: 528
+  year: 2024
