@@ -56,10 +56,10 @@ Our model inference speed = 672/(5.4 x 10^12) = 124.44 pico seconds
 # Web app Demo (AWS)
 
 
-![](./aws_bcu_app.gif)
+![](./aws_bcu_app.gif) 
 
 
-[AWS link](http://13.239.10.157:8501/)
+[AWS link](http://13.239.10.157:8501/) (credits expired, no longer functional, sorry !)
 
 
 [Streamlit link](https://bcu-classification-ml.streamlit.app/)
